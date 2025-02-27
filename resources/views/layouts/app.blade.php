@@ -31,7 +31,7 @@
 </script>
 
 </head>
-<body>
+<body class="text-neutral-600">
     <!-- Header -->
     <header>
         @if (Route::currentRouteName() !== 'home')
