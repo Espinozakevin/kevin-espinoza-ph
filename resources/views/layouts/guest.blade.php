@@ -19,16 +19,13 @@
             }
         </script>
     </head>
-    <body class="text-neutral-600">
+    <body class="text-neutral-600 bg-teal-50 dark:bg-neutral-900 dark:text-neutral-200">
         @if (Route::name('home'))
             <x-home-banner />
         @endif
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
+        
+        {{ $slot }}
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">
-                {{ $slot }}
-            </div>
-        </div>
         @vite('resources/js/app.js')
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>

@@ -1,5 +1,5 @@
 @auth
-    <button type="button" class="flex text-sm rounded-lg md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+    <button type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
         <span class="sr-only">Open user menu</span>
         {{-- TODO: Add profile picture system --}}
         <img class="w-10 h-10 rounded-lg" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
@@ -12,16 +12,16 @@
         </div>
         <ul class="py-2" aria-labelledby="user-menu-button">
             <li>
-                <a href="{{route('profile.edit')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">{{ __('Profile') }}</a>
+                <a href="{{route('profile.edit')}}" class="block text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">{{ __('Profile') }}</a>
             </li>
             <li>
-                <a href="{{route('dashboard')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">{{ __('Dashboard') }}</a>
+                <a href="{{route('dashboard')}}" class="block text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">{{ __('Dashboard') }}</a>
             <li>
               <form method="POST" action="{{ route('logout') }}">
                 @csrf
 
                 <a href="route('logout')" onclick="event.preventDefault();
-                                    this.closest('form').submit();" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">{{ __('Sign Out') }}</a>
+                                    this.closest('form').submit();" class="block text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">{{ __('Sign Out') }}</a>
             </form>
                 
             </li>

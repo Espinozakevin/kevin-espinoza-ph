@@ -18,6 +18,7 @@
         "vite": "^6.0.11"
     },
     "dependencies": {
+        "flag-icons": "^7.3.2",
         "flowbite-react": "^0.10.2",
         "flowbite-typography": "^1.0.5"
     }

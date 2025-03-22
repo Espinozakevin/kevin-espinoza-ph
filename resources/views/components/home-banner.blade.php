@@ -8,7 +8,6 @@
             <h1 class="text-7xl font-extrabold text-white">{{ __('Be different, Be original') }}</h1>
             <h2 class="text-4xl font-normal text-white">{{ __('Make an impact with modern, accessible and timeless
                 galleries') }}</h2>
-            <p class="text-xl text-neutral-400">{{ __('Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde non accusamus voluptatem earum ipsam hic reiciendis dignissimos saepe consectetur deserunt tempore, nulla perspiciatis ipsum quos consequatur expedita nostrum dolorem in!') }}</p>
             <button type="button"
                 class="text-white w-fit mx-auto bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800">
                 Choose plan
